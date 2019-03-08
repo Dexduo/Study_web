@@ -283,7 +283,7 @@ footer .container{
 }
 
 
-@media (max-width: 939px;) {
+@media (max-width: 939px) {
 	/* estilos para mobile */
 	.container {
 		width: 96%;
