@@ -43,13 +43,13 @@ label[for=azul]::after{
 	padding-top: 90px;
 }
 
-label[for=verde]{
+label[for=verde]::after{
 	left: 0px;
 }
-label[for=rosa]{
+label[for=rosa]::after{
 	left: 60px;
 }
-label[for=azul]{
+label[for=azul]::after{
 	left: 120px;
 }
 
@@ -97,6 +97,15 @@ label[for=azul]{
 }
 
 .cores label::after{
+	border: 6px solid rgba(0,0,0,0);
+	transition: 1s;
+}
+
+.cores label:hover::after{
+	border: 6px solid rgba(0,0,0,0.1);
+}
+
+.cores label::after{
 	cursor: pointer;
 }
 
@@ -139,4 +148,64 @@ label[for=azul]{
 		position: static;
 		float: left;
 	}
+
+	fieldset{
+		display: inline-block;
+		vertical-align: top;
+
+		margin: 1em 0;
+		min-width: 240px;
+		width: 45%; 
+	}
+}
+
+
+.detalhes{
+	margin: 2em 0;
+}
+
+.detalhes h2{
+	font-size: 1.5em;
+	line-height: 2;
+}
+
+.detalhes p{
+	margin: 1em 0;
+	font-size: 1em;
+	line-height: 1.5;
+	max-width: 36em;
+}
+
+@media (max-width: 500px){
+	.detalhes{
+		font-size: 1.2em;
+	}
+}
+
+
+table{
+	border-spacing: 0.2em;
+	border-collapse: separate;
+}
+
+thead{
+	background-color: #999;
+}
+
+thead th{
+	font-weight: bold;
+	padding: 0.3em 1em;
+	text-align: center;
+}
+
+td{
+	padding: 0.3em;
+}
+
+tr:nth-child(2n){
+	background-color: #CCC;
+}
+
+td:first-child{
+	font-style: italic;
 }
